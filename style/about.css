@@ -1,0 +1,38 @@
+
+/* 3.3 About Section */
+
+.about-item{
+    width: 30%;
+    float: left;
+    border: 1px #e8e8e8 solid;
+    padding: 50px 20px;
+}
+
+.about-content{
+    text-align: center;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item-title{
+    transition: color 0.5s;
+    text-transform: capitalize;
+}
+
+
+
+.about-item-link{
+    color: var(--maincolor);
+    text-transform: capitalize;
+}
+
+.about-item-description{
+    color: #999;
+    line-height: 1.5;
+}
+
+
+
+.about-item:hover .about-item-title{
+    color: white;
+}

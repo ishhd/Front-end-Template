@@ -1,0 +1,27 @@
+
+
+/* 3.7 Statistic Section */
+.statistic{
+    background-image: url(../images/images/background/background2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+}
+
+.statistic-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    
+}
+.statistic-number, .statistic-description{
+    color: white;
+    text-transform: capitalize;
+}
+
+.statistic-number{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

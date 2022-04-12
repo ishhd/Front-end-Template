@@ -1,0 +1,300 @@
+/* 3.11 Blog Section */
+.blog{
+    background-color: var(--backgroundcolor);
+}
+.blog-item{
+    width: 30%;
+    float: left;
+    background-color: white;
+    padding-bottom: 50px;
+}
+.blog-item.mg{
+    margin: 0 5%;
+}
+.blog-img{
+    width: 100%;
+}
+
+.blog-comment{  
+    text-align: left; 
+    padding: 20px;
+}
+
+.blog-comment span{
+    margin-right: 10px ;
+}
+
+
+.blog-page-description{
+    margin: 20px;
+    line-height: 1.6;
+    color: #999;
+}
+.blog-page-title{
+    margin: 0 20px;
+    font-size: 22px;
+}
+.blog-page-link{
+    color:var(--maincolor);
+    text-decoration:none;
+    margin: 0 20px;
+}
+
+/* Blog page */
+
+.blog-header{
+    background-color: var(--backgroundcolor);
+    
+}
+.breadcrumbs{
+    text-align: right;
+    font-size: 18px;
+    color: #999;
+}
+
+.header-item{
+    width: 50%;
+    float: left;
+}
+
+.breadcrumbs li{
+    display: inline-block;
+}
+
+.blog-header.pd-y{
+    padding: 60px 0;
+}
+.page-name{
+    font-size: 30px;
+}
+.breadcrumbs a{
+    color: var(--maincolor);
+}
+
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: #999;
+    content: "/\00a0";
+  }
+
+.breadcrumbs a:hover{
+      text-decoration: underline;
+}
+.blog-body .section-header{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.blog-body .section-header .section-line{
+    margin-left: 1px;
+    margin-bottom: 10px;
+}
+.blog-body .section-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 15px 0; 
+    margin-top: 20px;
+}
+.blog-cataegory{
+    width: 28%;
+    float: left;
+    margin-left: 1%;
+}
+.category-list{
+    list-style: none;
+}
+
+.category-name{
+    width: 50%;
+    text-align: left;
+    float: left;
+    display: inline-block;
+    color: #999;
+}
+.category-number{
+    width: 50%;
+    text-align: right;
+    float: left;
+    display: inline-block;
+    color: var(--maincolor);
+}
+.category-item{
+    border-bottom: 1px solid #e8e8e8; 
+    padding:20px 0;
+}
+.search-input{
+    padding: 9px 10px;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+    border: none;
+    box-shadow: 1.5px 1.5px 1.5px #ddd;
+    border-radius: 3px;
+    
+}
+
+.left-side{
+    width: 68%;
+    float: left;
+    margin-right: 2%;
+}
+.left-side img{
+    width: 98%;
+}
+.post{
+    margin: 20px 0;
+}
+.post img{
+    width: 30%;
+    float: left;
+    height: 60px;
+    margin-right: 8px;
+}
+.blog-posts{
+    width: 65%;
+    float: left;
+    
+}
+.blog-posts span{
+    color: var(--maincolor);
+    font-size: 14px;
+}
+.blog-posts h3{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.tags-word{
+    background-color: #edebeb;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 2px 0.5px;
+}
+.blog-info{
+    margin: 25px 0;
+}
+
+.blog-desc p{
+    color: #999;
+    margin: 20px 0;
+}
+.tags-left{
+    margin: 40px 0;
+}
+.tags-left h2{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.writer, .user-comment{
+    border: 1px solid #e8e8e8;
+    margin: 10px;
+}
+.writer img{
+    float:left;
+    width: 20%;
+    margin: 2%;
+}
+.writer-content{
+    float:left;
+    width: 70%;
+    margin: 2%;
+}
+.social-icons .icons{
+    background-color: var(--maincolor);
+    color: white;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 2px;
+}
+.writer-content h2{
+    float: left;
+    width: 40%;
+}
+.social-icons{
+    float: left;
+    width: 60%;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.writer-content p, .user-comment p{
+    color: #999;
+    margin: 10px;
+
+}
+.user-comment img{
+    width: 10%;
+    float: left;
+    margin: 2%;
+}
+
+.user-comment h2{
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 30px;
+    width: 20%;
+}
+.user-comment span{
+    color: #999;
+    width: 10%;
+    display: inline-block;
+}
+.user-comment a{
+    color: var(--maincolor);
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+    font-size: 13px;
+}
+.reply{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.contact form{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+}
+form .top-input{
+    width: 49.5%;
+    float: left;
+}
+
+.name-input{
+    margin-right: 0.5%;
+}
+.email-input{
+    margin-left: 0.5%;
+}
+.contact form input, .contact form textarea{
+    background-color: var(--backgroundcolor);
+    border: none;
+    padding: 15px 10px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 100%;
+}
+.top-layer{
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    height: 100px;
+}
+
+.contact .btn{
+    background-color: var(--maincolor);
+    color: white;
+    margin: 30px 0;
+    padding: 15px 30px;
+}

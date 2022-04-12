@@ -1,0 +1,61 @@
+/* 3.12 Contact Section */
+
+.contact-content{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.contact-content.mg{
+    margin: 0 5%;
+}
+.contact-way{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.contact-number{
+    color: #999;
+}
+.contact form{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 90px 0;
+}
+form .top-input{
+    width: 49.5%;
+    float: left;
+}
+
+.name-input{
+    margin-right: 0.5%;
+}
+.email-input{
+    margin-left: 0.5%;
+}
+.contact form input, .contact form textarea{
+    background-color: var(--backgroundcolor);
+    border: none;
+    padding: 15px 10px;
+    margin-top: 10px;
+}
+
+.subject, textarea{
+    width: 100%;
+}
+.top-layer{
+    width: 100%;
+    height: 100%;
+}
+
+textarea{
+    height: 100px;
+}
+
+.contact .btn{
+    background-color: var(--maincolor);
+    color: white;
+    margin: 30px 0;
+    padding: 15px 30px;
+}

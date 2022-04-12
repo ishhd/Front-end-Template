@@ -1,0 +1,293 @@
+/* 
+    1.Commen Style
+    2.General style
+    3.Sections style
+        3.1 Header Section
+        3.2 Home Section
+        3.3 About Section
+        3.4 Protofolio Section
+        3.5 Services Section
+        3.6 Prices Section
+        3.7 Team Section
+        3.8 Blog Page
+        3.9 Contact Section
+        3.10 Footer Section
+*/
+/* Common style 
+    1. container
+    2. obacity hover 
+    3. section padding
+    4. hover effect (left to right)
+    5. hover effect (top to bottom)
+    6. clear
+    7. font
+    8. overlay
+*/
+
+:root{
+    --maincolor: #6195ff;
+    --backgroundcolor: #f9f9f9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icon{
+    color: var(--maincolor);
+}
+.mgbtm{
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.hover-opacity:hover{
+    opacity: 0.7;
+}
+.hover-opacity{
+    transition: opacity 0.5s;
+}
+.hoverltr-effect{
+    position: relative;
+}
+
+.hoverltr-effect:after{
+    position: absolute;
+    content: "";
+    width:0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #333;
+    transition: width 0.5s;
+    z-index: -1;
+}
+.hoverltr-effect:hover:after{
+    width: 100%;
+}
+
+.hovertopbtm-effect{
+    position: relative;
+}
+
+.hovertopbtm-effect:after{
+    position: absolute;
+    content: "";
+    width:100%;
+    top: 0;
+    left: 0;
+    height: 0;
+    background: #333;
+    transition: height 0.5s;
+    z-index: -1;
+}
+.hovertopbtm-effect:hover:after{
+    height: 100%;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.pd-y{
+    padding: 100px 0;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-title{
+    margin: 15px;
+    font-size: 35px;
+    text-transform:capitalize;
+}
+
+.section-line{
+    background-color: var(--maincolor);
+    width: 60px;
+    height: 5px;
+    display: block;
+    margin: 0 auto 70px auto;
+}
+
+
+/* 3.1 Header Section */
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    width: 40%;
+    float: left;
+}
+
+.logo img{
+    width: 20%;
+    margin-top: 15px;
+}
+
+.list{
+    width: 60%;
+    text-align: right;
+    float: left;
+    text-align: right;
+    
+}
+
+.list > li{
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.list > li > a{
+    color: white;
+    padding: 20px 5px;
+    display: block;  
+}
+
+.list > li > a:after, .list li a.active:after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--maincolor);
+    transition: width 0.5s;
+}
+
+.list > li > a:after{
+    width: 0; 
+}
+
+.list li a:hover:after, .list li a.active:after{
+    width: 100%;
+}
+
+.drop-down-menu{
+    position:absolute;
+    background-color: var(--maincolor);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.drop-down-menu a {
+    color: white;
+    padding: 7px;
+    display: block;
+}
+
+.drop-down:hover .drop-down-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 3.2 Home Section */
+.home{
+    background-image: url("../images/images/background/background1.webp");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.home-content{
+    
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title{
+    text-transform: uppercase;
+    margin: 3%;
+    font-size: 3rem;
+}
+
+.btn{
+    margin: 2px;
+    padding: 10px;
+    border-radius: 3px;
+    min-width: 150px;
+    border: 0;
+    font-size: 16px;
+}
+
+.home-description{
+    margin: 20px 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.btn-start{
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-learn{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+
+
+/* 3.13 Footer Section */
+
+.footer{
+    background-color: #333;
+    text-align: center;
+}
+
+.footer .icons{
+    line-height: 30px;
+    background-color: var(--maincolor);
+    color: white;
+    padding: 6px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin: 3PX;
+    border-radius: 3PX;
+}
+
+.social-media{
+    margin: 30px;
+}
+
+.copyright{
+    color: #999;
+}
+
+.copyright a{
+    color: var(--maincolor);
+}

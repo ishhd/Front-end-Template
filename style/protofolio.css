@@ -1,0 +1,80 @@
+/* 3.4 Protofolio Section */
+.protfolio{
+    background-color: var(--backgroundcolor);
+}
+
+.protfolio-item{
+    width: 32%;
+    float: left;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 20px;;
+}
+.protfolio-item-img{
+    width: 100%;
+}
+.protfolio-item.mg{
+    margin: 0 2%;
+}
+.protfolio-item:hover .layer-content, .protfolio-item:hover .category, .protfolio-item:hover .layer-content-title, .protfolio-item:hover .layer-content a{
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    
+}
+
+.layer-content{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s visibility 0.5s;
+}
+.layer-info{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.category{
+    text-transform: uppercase;
+    color: var(--maincolor);
+    display: block;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s, opacity 0.5s;
+    opacity: 0;
+}
+.layer-content-title{
+    text-transform: capitalize;
+    font-size: 26px;
+    color: white;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}
+.layer-content a{
+    display:inline-block;
+    background-color: var(--maincolor);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: relative;
+    top: 10px;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.4s;
+    opacity: 0;
+}
+
+.layer-content a i{
+    line-height: 40px;
+}

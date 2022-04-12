@@ -1,0 +1,60 @@
+/* 3.8 Price Section */
+.price-item{
+    width: 30%;
+    float: left;
+    position: relative;
+    padding: 50px 0;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+.price-title{
+    text-transform:uppercase;
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.5s;
+}
+
+.price-month{
+    border: var(--maincolor) 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px;
+}
+.price{
+    font-size: 35px;
+    transition: color 0.5s;
+}
+.month{
+    transition: color 0.5s;
+    text-transform: uppercase;
+}
+.price-list {
+    list-style: none;
+    color: #999;
+    line-height: 1.5;
+}
+.price-btn{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--maincolor);
+    border: var(--maincolor) 2px solid;
+    border-radius: 3px;
+    transition: background-color 0.5s color 0.5s;
+}
+
+.price-item:hover .price-title{
+    color: var(--maincolor);
+}
+
+.price-item:hover .price, .price-item:hover .month{
+    color: white;
+}
+.price-item.mg{
+    margin: 0 5%;
+}
+.price-btn:hover{
+    background-color: var(--maincolor);
+    color: white;
+}
+
